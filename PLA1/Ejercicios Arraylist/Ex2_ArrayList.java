@@ -12,22 +12,22 @@ public class Ex2_ArrayList {
 		System.out.println("Escribe una frase: ");
 		String frase = s.nextLine();
 		
-		String[] arrayPalabras = frase.split(" "); //usamos el mÈtodo split de las arrays para separar la frase en palabras
+		String[] arrayPalabras = frase.split(" "); //usamos el m√©todo split de las arrays para separar la frase en palabras
 		
 		ArrayList<String> alistPalabras= new ArrayList<String>(); // creamos ArrayList
 		
-		for (String palabra : arrayPalabras) { //aÒadiendo cada palabra al arraylist
-			System.out.println(palabra);       //mostramos el arraylist creado
-			alistPalabras.add(palabra);
-			int long_palabra=palabra.length(); //comparamos longitudes de las palabras para saber cu·l es la m·s larga
+		for (String palabra : arrayPalabras) { //a√±adiendo cada palabra al arraylist
+			System.out.println(palabra);       //mostramos el array creado
+			alistPalabras.add(palabra);        //a√±adimos valores al arrylist
+			int long_palabra=palabra.length(); //comparamos longitudes de las palabras para saber cu√°l es la m√°s larga
 			if (long_palabra > long_max) {
 				long_max = long_palabra;
 				larga=palabra;
 			}
 			
 		}
-		num_palabras=alistPalabras.size(); // nos dar· el n˙mero de palabras contenidas en la arraylist
-		System.out.println("Hay "+num_palabras+" palabras y la palabra m·s larga es \'"+larga+"\'");
+		num_palabras=alistPalabras.size(); // nos dar√° el n√∫mero de palabras contenidas en la arraylist
+		System.out.println("Hay "+num_palabras+" palabras y la palabra m√°s larga es \'"+larga+"\'");
 	}
 
 }
